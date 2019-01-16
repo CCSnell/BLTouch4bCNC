@@ -1,5 +1,5 @@
 
-/* This tests a 3D Printer TL-TOUCH auto leveling sensor for 3D Printers. 
+/* This tests a BL-TOUCH auto leveling sensor for bCNC. 
  *  It sends a RC servo PWM signal of 10 degrees to lower the test probe.
  *  If the probe is pushed in approximately 0.130", the unit sends a quick positive pulse
  *  on the white wire. No more than 3.3 volts. (That is why pullups on)
@@ -8,7 +8,8 @@
  *  to another test point. After a delay it lowers the probe again & starts over.
  *  BL-touch may have inverted output so use the attachInterrupt line for FALLING edge detect.
  *  The repeatability on this one ranged about 0.003"
- *  This example code is in the public domain. DNA-Robotics.com 2018
+ *  This example code is in the public domain. Original code by DNA-Robotics.com 2018
+ *  https://forum.arduino.cc/index.php?topic=549369.0v
 */ 
 
 #include <Servo.h> 
